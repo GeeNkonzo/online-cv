@@ -1,0 +1,155 @@
+* { 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Martel', serif;
+}
+
+.hero {
+    background-image: url(../img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    background-position-y: -100px;
+    background-color: rgba(255, 255, 255, 0.771);
+}
+
+.navbar {
+    background-color: #FDE8E9aa !important;
+    position: fixed;
+    width: 100%;
+}
+.navbar a {
+    color: #937072 !important;
+    position: relative;
+    font-size: .9em;
+
+}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    height: 1px;
+    width: 10%;
+    background-color: #937072df; 
+    transition: width 300ms ease-out;
+}
+
+.navbar a:hover {
+    background-color: #FDE8E9 !important;
+}
+.navbar a:hover::after {
+    width: 70%;
+}
+
+.navbar-brand {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.navbar-burger {
+    text-align: center;
+}
+
+
+.hero-body > div > h1 {
+    color:#937072;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.hero-body > div > h2 {
+    color:  #937072;
+}
+
+.main {
+    margin: auto 10% 5%; 
+}
+
+.mySlides {
+    display:none;
+}
+
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slideshow-container > img {
+      height: 600px;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.footer {
+    color: #937072;
+    background-color: #FDE8E9;
+}
