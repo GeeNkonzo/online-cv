@@ -91,20 +91,25 @@
             <div class="slideshow-container">
                 <h2 class="title has-text-centered">Portfolio</h2>
 
-                    <div class="">
-                        <img class="mySlides fade" src="img/beach.jpg" style="width:100%">
-                        <img class="mySlides fade" src="img/bg.jpg" style="width:100%">
-                        <img class="mySlides fade" src="img/pexels-photo-1054198.jpeg" style="width:100%">
+                <a href="https://geenkonzo.github.io/online-cv/index.html" target="blank">
+                    <img class="mySlides fade" src="img/online-cv.png">
+                </a>
+                <a href="https://geenkonzo.github.io/jon-chretien/index.html" target="blank">
+                    <img class="mySlides fade" src="img/jon-chretien.png">
+                </a>
+                <a href= "https://github.com/GeeNkonzo/php-quiz-project" target = "blank">
+                    <img class="mySlides fade" src="img/php-quiz.png">
+                </a>
 
-                        <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="next" onclick="plusDivs(1)">&#10095;</button>
-                    </div>
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                    </div>
-            </div>
+                <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="next" onclick="plusDivs(1)">&#10095;</button>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+        </div>
     </section>
 
     <footer class= "footer">
@@ -122,7 +127,9 @@
         function plusDivs(n) {
             showDivs(slideIndex += n);
         }
-        
+        function currentSlide(n) {
+            showDivs(slideIndex = n);
+        }
         function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
@@ -132,6 +139,7 @@
                 x[i].style.display = "none";  
             }
             x[slideIndex-1].style.display = "block";  
+            x[slideIndex-1].classList.add('active');  
         }
     </script>
     
