@@ -6,7 +6,9 @@
     <title>Gcobisa Nkonzo</title>  
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Martel:300,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 </head>
 <body>
     <section class= "hero is-fullheight">
@@ -22,6 +24,7 @@
                     </span>
 
                 </div>
+                
 
                 <div class="navbar-menu" id= "navMenu">
                     <div class="navbar-end">
@@ -59,9 +62,10 @@
                     </div>
                     <div class="tile is-child box">
                         <p class="title">Contact</p>
-                        <p><Cape Town, South Africa</p>
-                        <p>079 913 1916</p>
-                        <a style = "word-wrap: break-word;" href="mailto:gcobisankonzo@gmail.com">gcobisankonzo@gmail.com</a>
+                        <p><i class="fas fa-map-marked-alt"></i><span> Cape Town, South Africa</span></p>
+                        <p><i class="fas fa-phone"></i><span> 079 913 1916</span></p>
+                        <i class="fas fa-envelope"></i>
+                        <span><a style = "word-wrap: break-word;" href="mailto:gcobisankonzo@gmail.com"> gcobisankonzo@gmail.com</a></span>
                     </div>
                 </div>
                 <div class="tile is-parent">
@@ -105,9 +109,9 @@
                 <button class="next" onclick="plusDivs(1)">&#10095;</button>
                 
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" id="1" onclick="currentSlide(1)"></span> 
+                    <span class="dot" id="2" onclick="currentSlide(2)"></span> 
+                    <span class="dot" id="3" onclick="currentSlide(3)"></span> 
                 </div>
         </div>
     </section>
@@ -129,6 +133,7 @@
         }
         function currentSlide(n) {
             showDivs(slideIndex = n);
+            document.getElementById(n).style.background = "#444";
         }
         function showDivs(n) {
             var i;

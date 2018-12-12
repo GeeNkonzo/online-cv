@@ -151,6 +151,10 @@ body {
     from {opacity: .4} 
     to {opacity: 1}
   }
+  .fas {
+    font-size: 1em;
+    transform: rotateY(180deg);
+  }
 
 .footer {
     color: #937072;
