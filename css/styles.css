@@ -75,14 +75,9 @@ body {
 }
 
 .slideshow-container {
-    max-width: 400px;
+    max-width: 70%;
     position: relative;
     margin: auto;
-  }
-  
-  .slideshow-container > img {
-      height: 300px;
-      width: 400px;
   }
 
   /* Hide the images by default */
