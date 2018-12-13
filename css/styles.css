@@ -154,6 +154,7 @@ body {
 .footer {
     color: #937072;
     background-color: #FDE8E9;
+    font-size: 3em;
 }
 
 @media (max-width: 1087px) {
