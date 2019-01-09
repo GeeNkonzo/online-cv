@@ -169,6 +169,9 @@ body {
       text-align: center;
   }
 
+  .fa-3x {
+      margin: auto 10px;
+  }
 
 .footer {
     color: #937072;
