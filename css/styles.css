@@ -173,6 +173,23 @@ body {
       margin: auto 10px;
   }
 
+  .fa-html5:hover {
+      color: orange;
+  }
+
+  .fa-css3-alt:hover {
+    color: blue;
+  }
+
+  .fa-sass:hover {
+    color: pink;
+  }
+
+  .fa-php:hover {
+    color: purple;
+  }
+
+
 .footer {
     color: #937072;
     background-color: #FDE8E9;
