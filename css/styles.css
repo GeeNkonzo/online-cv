@@ -1,3 +1,5 @@
+/* Base styles */
+
 * { 
     scroll-behavior: smooth;
 }
@@ -6,6 +8,7 @@ body {
     font-family: 'Martel', serif;
 }
 
+/* Hero image styling */
 .hero {
     background-image: url(../img/background.jpeg);
     background-repeat: no-repeat;
@@ -16,6 +19,18 @@ body {
     background-color: rgba(255, 255, 255, 0.771);
 }
 
+.hero-body > div > h1 {
+    color:#937072;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.hero-body > div > h2 {
+    color:  #937072;
+}
+
+
+/* Navigation bar settings */
 .navbar {
     background-color: #FDE8E9aa !important;
     position: fixed;
@@ -55,21 +70,16 @@ body {
     text-align: center;
 }
 
-
-.hero-body > div > h1 {
-    color:#937072;
-    font-size: 3em;
-    font-weight: 400;
-}
-
-.hero-body > div > h2 {
-    color:  #937072;
-}
-
+/* Main body styling */
 .main {
     margin: auto 10% 5%; 
 }
 
+.skills {
+    text-align: center;
+}
+
+/* Slideshow styling in the last section of index page */
 .mySlides {
     display:none;
 }
@@ -130,6 +140,7 @@ body {
     background-color: #717171;
   }
 
+  /* Animation effect on slideshow images */
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -147,16 +158,19 @@ body {
     to {opacity: 1}
   }
 
+/* Icon styling */
   .fas {
     font-size: 1em;
     transform: rotateY(180deg);
     transition: transform 200ms ease-out;
   }
 
+  /* Transition added on icons */
   .fab {
     transition: transform 200ms ease-out;
   }
 
+  /* Hover effect styling on icons */
   .fas:hover {
       transform: scale(1.1) rotateY(180deg);
   }
@@ -165,14 +179,12 @@ body {
       transform: scale(1.1);
   }
 
-  .skills {
-      text-align: center;
-  }
-
+  /* Spacing between icons in skills section */
   .fa-2x {
       margin: auto 10px;
   }
 
+  /* Colours added when hovering on skills icons */
   .fa-html5:hover {
       color: orange;
   }
@@ -193,6 +205,7 @@ body {
       color: tomato;
   }
 
+  /* Footer */
 
 .footer {
     color: #937072;
@@ -203,6 +216,8 @@ body {
 .footer a {
     color: #937072;
 }
+
+/* Responsive design */
 
 @media (max-width: 1087px) {
     .navbar a::after {
